@@ -1,4 +1,4 @@
-resource "kubernetes_limit_range" "limit" {
+resource "kubernetes_limit_range" "this" {
   count = var.limit == true ? 1 : 0
 
   metadata {
